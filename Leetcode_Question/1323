@@ -1,0 +1,59 @@
+class Solution {
+    public int maximum69Number (int num) {
+        int original = num;
+        int max = 0;
+        // max number and final ans.
+        int max1 =0;
+        // n is num
+        int n = num;
+        // count digit in number
+        int k = 0;
+        while (num != 0) {
+            int last = num % 10;
+            k++;
+            num = num / 10;
+        }
+        // create a array size of k(digit count)
+        int[] arr = new int[k];
+
+        // digit store in array
+        int j = k - 1;
+        while (n != 0) {
+            arr[j] = n % 10;
+            n = n / 10;
+            j--;
+        }
+
+
+        int i = 0;
+        int h = i + 1;
+        // change 6 into 9 and 9 into 6.
+        while (i < k) {
+            int[] temp = new int[k];
+            if (arr[i] == 6) {
+                temp[i] = 9;
+            } else if (arr[i] == 9) {
+                temp[i] = 6;
+            }
+            i++;
+            // store in temp array
+            for (int l = 0; l < arr.length; l++) {
+                if (temp[l] == 0) {
+                    temp[l] = arr[l];
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            // array convert into String
+            for (int l = 0; l < temp.length; l++) {
+                sb.append(temp[l]);
+            }
+            //String convert into int
+            int final_ans = Integer.parseInt(sb.toString());
+            max = Math.max(final_ans,max);
+           max1 = Math.max(max,original);
+
+        }
+        return max1;
+    }
+}

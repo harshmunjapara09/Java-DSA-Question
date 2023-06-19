@@ -1,0 +1,20 @@
+class Solution {
+    public int differenceOfSum(int[] nums) {
+        int n = nums.length;
+        int elementSum = 0;
+        int digitSum =0;
+        int last =0;
+        for(int i=0;i<n;i++){
+            elementSum += nums[i];
+
+             while(nums[i] != 0){
+                    last = nums[i] % 10;
+                    digitSum += last;
+                    nums[i] /= 10;
+             }
+
+        }
+        int diff = elementSum - digitSum;
+        return diff;
+    }
+}

@@ -1,0 +1,21 @@
+class Solution {
+    public List<String> commonChars(String[] words) {
+        ArrayList<String> list = new ArrayList<>();
+        char[] ch = words[0].toCharArray();
+
+        for (int i = 0; i < words[0].length(); i++) {
+            String c = String.valueOf(ch[i]);
+            int count = 1;
+            for (int k = 1; k < words.length; k++) {
+                if (words[k].contains(c)) {
+                    count++;
+                    words[k]= words[k].replaceFirst(c,"-");
+                }
+            }
+            if (count == words.length) {
+                list.add(c);
+            }
+        }
+        return list;
+    }
+}

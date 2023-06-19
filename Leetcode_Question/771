@@ -1,0 +1,15 @@
+ class Solution {
+        public int numJewelsInStones(String jewels, String stones) {
+            int jn=jewels.length();
+            int sn=stones.length();
+            int k=0;
+            for (int i=0;i<jn;i++){
+                for (int j=0;j<sn;j++){
+                    if(jewels.charAt(i)==stones.charAt(j)){
+                        k++;
+                    }
+                }
+            }
+            return k;
+        }
+    }

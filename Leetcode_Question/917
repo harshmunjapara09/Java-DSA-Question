@@ -1,0 +1,30 @@
+class Solution {
+    public String reverseOnlyLetters(String s) {
+         StringBuilder a = new StringBuilder();
+        StringBuilder a1 = new StringBuilder();
+        char[] ans = new char[s.length()];
+
+        for (int i = 0; i < s.length(); i++) {
+            if (!Character.isLetter(s.charAt(i))){
+                ans[i]=s.charAt(i);
+            } else {
+                a.append(s.charAt(i));
+            }
+        }
+        a.reverse();
+        int j=0;
+        for (int i = 0; i < ans.length; i++) {
+            if (ans[i]=='\u0000'){
+                ans[i]=a.charAt(j);
+                j++;
+                continue;
+            }
+        }
+
+        for (int i = 0; i < ans.length; i++) {
+            a1.append(ans[i]);
+        }
+
+        return a1.toString();
+    }
+}
