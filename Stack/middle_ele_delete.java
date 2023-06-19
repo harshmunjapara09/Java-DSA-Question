@@ -1,4 +1,3 @@
-package Stack;
 
 public class middle_ele_delete {
     public static void main(String[] args) {
