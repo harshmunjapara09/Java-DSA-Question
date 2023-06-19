@@ -1,5 +1,4 @@
 package Stack;
-
 class Stack1 {
     public static void main(String[] args) {
         int[] stack = new int[5];
