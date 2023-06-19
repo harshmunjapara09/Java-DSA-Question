@@ -24,13 +24,11 @@ public class matrix {
 //        int sumOfDiagonal =  sumOfDiagonal(mat,row,col);
 //        System.out.println(sumOfDiagonal);
 //        binarySearch(mat,row,col);
-        searchSortedRowAndCol(mat,row,col);
+//        searchSortedRowAndCol(mat,row,col);
 //        matrixDiagonalSum(mat,row,col);
 //         shortestPath(mat,row,col);
-         spiralMatrix(mat);
-         // 00 01 02
-        // 10 11 12
-        // 20 21 22
+//         spiralMatrix(mat);
+
     }
 
     private static void spiralMatrix(int[][] mat) {
