@@ -1,0 +1,26 @@
+class Solution {
+    public int[] countBits(int n) {
+        int [] ans = new int[n+1];
+        int j=0;
+        for (int i = 0; i <= n; i++) {
+            String binary = Integer.toBinaryString(i);
+            long bin = Long.parseLong(binary);
+            if (bin==0){
+                ans[j]=0;
+                j++;
+            }
+            else {
+                int temp=0;
+                while (bin!=0){
+                    long last = bin % 10;
+                    temp += last;
+                    bin /=10;
+                    ans[j]=temp;
+                }
+                j++;
+            }
+
+        }
+        return ans;
+    }
+}
