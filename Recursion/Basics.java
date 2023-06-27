@@ -37,7 +37,6 @@ public class Basics {
 //        Secound Way
 //        System.out.println(lastOccurence1(arr,key,0));
 
-
 //        int n = 2;
 //        int power = 10;
 ////        One Way
