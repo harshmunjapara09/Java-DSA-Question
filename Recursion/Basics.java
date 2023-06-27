@@ -59,15 +59,16 @@ public class Basics {
 //        StringBuilder s = new StringBuilder();
 //        System.out.println(numberConvertString(n,s));
 
-        String s = "Harsh";
-        System.out.println(findlength(s));
-
+        int n=3;
+        System.out.println(friendPairing(n));
 
     }
 
-    public static int findlength(String s) {
-
-        return 0;
+    private static int friendPairing(int n) {
+        if (n==1 || n==2){
+            return n;
+        }
+        return  friendPairing(n-1) + (n-1) * friendPairing(n-2);
     }
 
     private static String numberConvertString(int n,StringBuilder s) {
