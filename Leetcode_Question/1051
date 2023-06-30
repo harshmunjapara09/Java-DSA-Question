@@ -1,0 +1,28 @@
+class Solution {
+    public int heightChecker(int[] heights) {
+        int large = Integer.MIN_VALUE;
+        for (int i = 0; i < heights.length; i++) {
+            large = Math.max(large, heights[i]);
+        }
+        int[] temp = new int[large + 1];
+        for (int i = 0; i < heights.length; i++) {
+            temp[heights[i]]++;
+        }
+        int[] ans = new int[heights.length];
+        int k = 0;
+        for (int i = 0; i < temp.length; i++) {
+            if (temp[i] != 0) {
+                for (int j = 0; j < temp[i]; j++) {
+                    ans[k++] = i;
+                }
+            }
+        }
+        int count=0;
+        for (int i = 0; i < heights.length; i++) {
+            if (heights[i]!=ans[i]){
+                count++;
+            }
+        }
+        return count;
+    }
+}
