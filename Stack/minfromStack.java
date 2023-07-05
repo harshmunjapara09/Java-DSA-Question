@@ -7,7 +7,7 @@ public class minfromStack {
     static int minimumTop = -1;
 
     public static void main(String[] args) {
-        pushinStack(10);
+        pushinStack(15);
         pushinStack(20);
         pushinStack(11);
         pushinStack(5);
