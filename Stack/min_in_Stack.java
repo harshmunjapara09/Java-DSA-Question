@@ -1,6 +1,6 @@
 package Stack;
 public class min_in_Stack {
-    static int mintop = 0;
+    static int mintop = -1;
     public static void main(String[] args) {
         int[] Stack = new int[5];
         int top = -1;
@@ -15,17 +15,19 @@ public class min_in_Stack {
         top=pop(Stack,min,top);
         System.out.println("After popping");
         System.out.println("Minimum is  " + getmin(min));
-
+        top=pop(Stack,min,top);
+        System.out.println("After popping");
+        System.out.println("Minimum is  " + getmin(min));
     }
 
     private static int getmin(int[] min) {
-        return min[mintop-1];
+        return min[mintop];
     }
 
     public static int pop(int[] stack, int[] min, int top) {
         int value = stack[top];
         top--;
-        if (value==min[mintop-1]){
+        if (value==min[mintop]){
             mintop--;
         }
         return top;
@@ -36,12 +38,12 @@ public class min_in_Stack {
         stack[top] = value;
 
         if (top == 0) {
-            min[mintop] = value;
             mintop++;
+            min[mintop] = value;
         }
-        if (value < min[mintop-1]) {
-            min[mintop] = value;
+        if (value < min[mintop]) {
             mintop++;
+            min[mintop] = value;
         }
 
         return top;
