@@ -1,4 +1,6 @@
-package Stack;
+package Stack.Original;
+
+import Stack.Original.pushBottomofStack;
 
 import java.util.Stack;
 

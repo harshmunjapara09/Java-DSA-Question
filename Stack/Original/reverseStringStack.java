@@ -1,4 +1,4 @@
-package Stack;
+package Stack.Original;
 import java.util.Stack;
 public class reverseStringStack {
     public static void main(String[] args) {

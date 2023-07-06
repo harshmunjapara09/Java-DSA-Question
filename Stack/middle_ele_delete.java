@@ -2,7 +2,7 @@ package Stack;
 
 public class middle_ele_delete {
     public static void main(String[] args) {
-        int n = 123456;
+        int n = 12345;
         int m = n;
         int count = 0;
         while (n != 0) {
