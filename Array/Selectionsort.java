@@ -1,3 +1,5 @@
+package Array;
+
 public class Selectionsort {
     public static void main(String[] args) {
         int[] arr = {11, 1, 2, 12, 23, 43, 54};
@@ -15,6 +17,7 @@ public class Selectionsort {
                 arr[i] = temp;
             }
         }
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }

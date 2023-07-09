@@ -127,16 +127,16 @@ public class StringQue {
     }
 
     public static void MergeString(String str1, String str2) {
-        StringBuilder s1 = new StringBuilder("");
+        StringBuilder s1 = new StringBuilder();
         int n1 = str1.length();
         int n2 = str2.length();
         int maxlength = Math.max(n1, n2);
         for (int i = 0; i < maxlength; i++) {
             if (i < n1) {
-                s1 = s1.append(str1.charAt(i));
+                s1.append(str1.charAt(i));
             }
             if (i < n2) {
-                s1 = s1.append(str2.charAt(i));
+                s1.append(str2.charAt(i));
             }
         }
         System.out.println(s1.toString());
