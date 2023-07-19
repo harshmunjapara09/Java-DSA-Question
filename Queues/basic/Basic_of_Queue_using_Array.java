@@ -11,7 +11,7 @@ public class Basic_of_Queue_using_Array {
         enqueue(30);
         enqueue(40);
         enqueue(50);
-
+        dequeue();
         print();
         System.out.println("Size : " + size());
         System.out.println("Peek :" +peek());
