@@ -14,6 +14,16 @@ public class LinkedList {
     }
 
     private void f_l_exchange() {
+        Node temp = head;
+        Node first = head;
+        Node last;
+        while (temp!=null){
+            temp=temp.next;
+            if (temp==head){
+                break;
+            }
+        }
+        last=temp;
 
     }
 
