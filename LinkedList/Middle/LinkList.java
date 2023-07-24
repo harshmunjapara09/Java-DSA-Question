@@ -6,7 +6,39 @@ public class LinkList {
     public static void main(String[] args) {
         LinkList ll = new LinkList();
         ll.insert(10);
+        ll.insert(20);
+        ll.insert(30);
+        ll.insert(40);
+        ll.insert(50);
+
+
+
+        ll.printMiddleNode();
+
     }
+    private int length() {
+        int c = 0;
+        Node temp = head;
+        while (temp != null) {
+            c++;
+            temp = temp.next;
+        }
+        return c;
+    }
+
+    private void printMiddleNode() {
+        int len = length();
+        int mid = len/2;
+        Node temp = head;
+        int c =0;
+        while (mid!=c){
+            temp= temp.next;
+            c++;
+        }
+        System.out.println(temp.data);
+
+    }
+
 
     private void insert(int data) {
         Node nn = new Node(data);
