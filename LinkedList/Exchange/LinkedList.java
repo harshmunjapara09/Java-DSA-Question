@@ -10,8 +10,27 @@ public class LinkedList {
         ll.circularInsert(30);
         ll.circularInsert(40);
 
-        ll.f_l_exchange();
+//        ll.f_l_exchange();
+        ll.f_l_exchange_address();
         ll.print();
+    }
+
+    private void f_l_exchange_address() {
+        if (head == null || head.next == head) {
+            return;
+        }
+        Node last =head;
+        Node secondLast = null;
+
+        while (last.next != head) {
+            secondLast = last;
+            last = last.next;
+        }
+        last.next = head.next;
+        head.next = secondLast.next;
+        secondLast.next = head;
+
+        head = last;
     }
 
     private void print() {

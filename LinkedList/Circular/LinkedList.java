@@ -2,7 +2,7 @@ package LinkedList.Circular;
 
 public class LinkedList {
     Node head;
-    Node tail;
+    Node temp;
 
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
@@ -16,14 +16,15 @@ public class LinkedList {
         ll.print();
     }
     public void Circularinsert(int data) {
+
         Node nn = new Node(data);
         if (head == null) {
             head = nn;
-            tail = nn;
+            temp = nn;
         } else {
-            tail.next = nn;
-            tail = nn;
-            tail.next = head;
+            temp.next = nn;
+            temp = nn;
+            temp.next = head;
         }
     }
 
@@ -45,12 +46,11 @@ public class LinkedList {
     }
 }
 
-class Node extends LinkedList {
+class Node  {
     int data;
     Node next;
 
     protected Node(int data) {
         this.data = data;
-        this.next = null;
     }
 }
