@@ -11,10 +11,24 @@ public class LinkedList {
         ll.circularInsert(40);
 
         ll.f_l_exchange();
+        ll.print();
+    }
+
+    private void print() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+            if (head == temp) {
+                break;
+            }
+        }
     }
 
     private void f_l_exchange() {
-
+        int temp = head.data;
+        head.data = tail.data;
+        tail.data= temp;
     }
 
     private void circularInsert(int data) {
