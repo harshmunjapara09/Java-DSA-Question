@@ -8,13 +8,38 @@ public class LinkedList {
         LinkedList ll = new LinkedList();
         ll.Circularinsert(10);
         ll.Circularinsert(20);
-        ll.Circularinsert(20);
         ll.Circularinsert(30);
         ll.Circularinsert(50);
         ll.Circularinsert(80);
-
-        ll.print();
+        System.out.println(ll.checkedCircular());
+        System.out.println(ll.countNode());
+//        ll.print();
     }
+
+    private int countNode() {
+        Node temp = head;
+        int count =0;
+        while (temp!=null){
+            temp = temp.next;
+            count++;
+            if (head==temp){
+                return count;
+            }
+        }
+        return count;
+    }
+
+    private boolean checkedCircular() {
+        Node temp = head;
+        while (temp!=null){
+            temp = temp.next;
+            if (head==temp){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void Circularinsert(int data) {
 
         Node nn = new Node(data);
