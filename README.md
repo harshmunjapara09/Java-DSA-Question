@@ -1,4 +1,5 @@
 Java Data Structure and Algorithm Questions Repository
+
 Welcome to the Java Data Structure and Algorithm Questions Repository! This repository is designed to help you practice and improve your knowledge of data structures and algorithms using Java. It contains a collection of Java programs and solutions to various data structure and algorithm questions.
 
 Table of Contents
