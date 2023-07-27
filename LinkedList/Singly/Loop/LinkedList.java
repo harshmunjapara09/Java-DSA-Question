@@ -1,6 +1,4 @@
-package LinkedList.Loop;
-
-import org.w3c.dom.Node;
+package LinkedList.Singly.Loop;
 
 public class LinkedList {
     ListNode head;

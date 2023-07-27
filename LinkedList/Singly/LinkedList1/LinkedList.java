@@ -1,4 +1,4 @@
-package LinkedList.LinkedList1;
+package LinkedList.Singly.LinkedList1;
 
 import java.util.Stack;
 
@@ -16,7 +16,7 @@ public class LinkedList {
         ll.insert(50);
         ll.insert(60);
 
-        ll.update(7,100);
+        ll.update(7, 100);
 //        System.out.println(ll.length());
 //        ll.printReverse();
 //        ll.getNthNode(6);
@@ -31,16 +31,17 @@ public class LinkedList {
 
     private void update(int idx, int value) {
         Node temp = head;
-        int count =1;
+        int count = 1;
 
-        while (temp!=null && count!=idx){
+        while (temp != null && count != idx) {
             temp = temp.next;
             count++;
         }
-        if (temp==null){
+        if (temp == null) {
             System.out.println("Wrong Index");
+        } else {
+            temp.data = value;
         }
-        temp.data=value;
     }
 
     private void deleteNotHead(Node temp) {
@@ -49,16 +50,16 @@ public class LinkedList {
     }
 
     private void getNthNodefromLast(int n) {
-        int c =0;
+        int c = 0;
         Node t = head;
-        while (t!=null){
+        while (t != null) {
             c++;
-            t= t.next;
+            t = t.next;
         }
         int ans = c - n + 1;
 
         Node temp = head;
-        int count=1;
+        int count = 1;
         while (count != ans) {
             count++;
             temp = temp.next;
