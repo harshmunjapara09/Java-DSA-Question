@@ -8,7 +8,6 @@ Welcome to the Java Data Structure and Algorithm Questions Repository! This repo
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 In this repository, you will find a range of data structure implementations and algorithm solutions in Java. The primary goal is to provide you with a hands-on approach to practice and understand these fundamental concepts, which are crucial for any aspiring software developer or computer science enthusiast.
