@@ -52,9 +52,6 @@ Here are some of the algorithms you can find in this repository:
 ## Contributing
 Contributions to this repository are welcome and encouraged! If you have any new data structure implementations, algorithm solutions, or improvements to existing code, feel free to submit a pull request. Please ensure your contributions follow the repository's coding standards and guidelines.
 
-## License
-This repository is licensed under the MIT License. Feel free to use, modify, and distribute the code for personal or educational purposes. However, please attribute the original authors and this repository if you use the code elsewhere.
-
 Happy coding and enjoy your journey of learning data structures and algorithms with Java! If you have any questions or need further assistance, feel free to contact the repository owner.
 
 **Repository Owner:** @harshmunjapara09
