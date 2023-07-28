@@ -18,9 +18,6 @@ public class LinkedList {
         ll.print();
     }
 
-    private void remove() {
-
-    }
 
     private void print() {
         ListNode temp = head;
@@ -30,20 +27,20 @@ public class LinkedList {
         }
     }
 
-//    private void remove() {
-//        ArrayList<Integer> list = new ArrayList<>();
-//
-//        ListNode prev = head;
-//        ListNode curr = head;
-//        while (curr != null && curr.next!=null) {
-//            list.add(curr.data);
-//            prev=curr;
-//            curr = curr.next;
-//            if (list.contains(curr.data)) {
-//                prev.next = curr.next;
-//            }
-//        }
-//    }
+    private void remove() {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        ListNode prev = head;
+        ListNode curr = head;
+        while (curr != null && curr.next!=null) {
+            list.add(curr.data);
+            prev=curr;
+            curr = curr.next;
+            if (list.contains(curr.data)) {
+                prev.next = curr.next;
+            }
+        }
+    }
 
     private void insert(int data) {
         ListNode nn = new ListNode(data);
