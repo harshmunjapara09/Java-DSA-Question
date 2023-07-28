@@ -15,17 +15,17 @@ In this repository, you will find a range of data structure implementations and 
 ## How to Use This Repository
 Here are some guidelines on how to make the most out of this repository:
 
-## Clone the Repository: Start by cloning this repository to your local machine using git clone.
+## Clone the Repository: ## Start by cloning this repository to your local machine using git clone.
 
-## Explore the Codebase: Take some time to explore the different folders and files available in the repository. The codebase is organized into sections, making it easy to find specific data structures and algorithms.
+## Explore the Codebase: ## Take some time to explore the different folders and files available in the repository. The codebase is organized into sections, making it easy to find specific data structures and algorithms.
 
-## Run and Test Code: Before proceeding with your own solutions, run the existing code to see how each data structure is implemented and how the algorithm works. Make sure you understand the code thoroughly.
+## Run and Test Code: ## Before proceeding with your own solutions, run the existing code to see how each data structure is implemented and how the algorithm works. Make sure you understand the code thoroughly.
 
-## Implement Your Solutions: After familiarizing yourself with the existing code, you can try solving the provided data structure and algorithm questions on your own. Create new Java files or modify existing ones with your solutions.
+## Implement Your Solutions: ## After familiarizing yourself with the existing code, you can try solving the provided data structure and algorithm questions on your own. Create new Java files or modify existing ones with your solutions.
 
-## Test Your Solutions: Always test your implementations with various test cases to ensure they work correctly for different scenarios. Consider edge cases and extreme inputs to validate your solutions.
+## Test Your Solutions: ## Always test your implementations with various test cases to ensure they work correctly for different scenarios. Consider edge cases and extreme inputs to validate your solutions.
 
-## Optimization and Complexity: As you work on the problems, try to optimize your solutions to achieve better time and space complexity. Understanding the efficiency of your algorithms is essential for real-world applications.
+## Optimization and Complexity: ## As you work on the problems, try to optimize your solutions to achieve better time and space complexity. Understanding the efficiency of your algorithms is essential for real-world applications.
 
 # Data Structures
 The data-structures folder contains implementations of various data structures in Java. Each data structure is organized in its own directory and includes the following:
