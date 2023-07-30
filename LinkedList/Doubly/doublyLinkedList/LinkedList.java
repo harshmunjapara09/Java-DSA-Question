@@ -1,4 +1,4 @@
-package LinkedList.doublyLinkedList;
+package LinkedList.Doubly.doublyLinkedList;
 
 public class LinkedList {
     ListNode head;
@@ -12,9 +12,36 @@ public class LinkedList {
         ll.insert(40);
         ll.insert(50);
         ll.insert(60);
-        ll.delete(10);
+        ll.delete(40);
+        ll.updateIndex(3, 300);
+        ll.update(20,30);
         ll.print();
         ll.reversePrint();
+    }
+
+    private void update(int oldValue, int newValue) {
+        ListNode temp = head;
+
+        while (temp.data!=oldValue){
+            temp=temp.next;
+        }
+        temp.data = newValue;
+    }
+
+    private void updateIndex(int idnx, int value) {
+        int count = 1;
+        ListNode temp = head;
+
+        while (count != idnx) {
+            count++;
+            temp = temp.next;
+        }
+        if (temp.next == null) {
+            System.out.println("Wrong Index");
+            return;
+        } else {
+            temp.data = value;
+        }
     }
 
     private void delete(int value) {
@@ -23,19 +50,19 @@ public class LinkedList {
             tail = null;
         } else if (head.data == value) {
             head = head.next;
-            head.prev=null;
+            head.prev = null;
         } else {
             ListNode prev = head;
             ListNode curr = head.next;
 
-            while (curr.data != value){
-                prev =curr;
-                curr=curr.next;
+            while (curr.data != value) {
+                prev = curr;
+                curr = curr.next;
             }
-            if (curr.next==null){
-                prev.next=null;
-               tail = prev;
-            }else {
+            if (curr.next == null) {
+                prev.next = null;
+                tail = prev;
+            } else {
                 curr.prev.next = curr.next;
                 curr.next.prev = prev;
             }

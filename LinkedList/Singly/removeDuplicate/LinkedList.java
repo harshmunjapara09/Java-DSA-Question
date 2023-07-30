@@ -9,11 +9,13 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
 
-        ll.insert(10);
-        ll.insert(20);
-        ll.insert(30);
-        ll.insert(20);
-        ll.insert(40);
+        ll.insert(1);
+        ll.insert(2);
+        ll.insert(6);
+        ll.insert(3);
+        ll.insert(4);
+        ll.insert(5);
+        ll.insert(6);
         ll.remove();
         ll.print();
     }
@@ -34,11 +36,11 @@ public class LinkedList {
         ListNode curr = head;
         while (curr != null && curr.next!=null) {
             list.add(curr.data);
-            prev=curr;
-            curr = curr.next;
             if (list.contains(curr.data)) {
                 prev.next = curr.next;
             }
+            prev=curr;
+            curr = curr.next;
         }
     }
 

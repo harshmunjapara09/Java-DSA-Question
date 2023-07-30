@@ -1,4 +1,4 @@
-package LinkedList.reverseDoublyLinkedList;
+package LinkedList.Doubly.reverseDoublyLinkedList;
 
 import java.util.Stack;
 

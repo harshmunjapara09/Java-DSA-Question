@@ -1,4 +1,4 @@
-package LinkedList.removeSortedDoubly;
+package LinkedList.Doubly.removeSortedDoubly;
 
 public class LinkedList {
     ListNode head;

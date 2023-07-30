@@ -1,4 +1,4 @@
-package LinkedList.pairSum;
+package LinkedList.Doubly.pairSum;
 
 public class LinkedList {
     ListNode head;
