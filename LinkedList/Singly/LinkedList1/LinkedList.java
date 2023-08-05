@@ -14,11 +14,11 @@ public class LinkedList {
         ll.insert(30);
         ll.insert(40);
         ll.insert(50);
-        ll.insert(60);
-
-        ll.update(7, 100);
+        ll.removeLastnNode(3);
+//        ll.update(7, 100);
 //        System.out.println(ll.length());
 //        ll.printReverse();
+        ll.reverse();
 //        ll.getNthNode(6);
 //        ll.getNthNodefromLast(3);
 //        ll.print();
@@ -27,6 +27,39 @@ public class LinkedList {
 //        System.out.println();
 //        ll.delete(50);
         ll.print();
+    }
+
+    private void removeLastnNode(int indx) {
+        int len = length();
+        if (indx==len){
+            head =head.next;
+            return;
+        }
+
+        Node prev = head;
+        Node curr = head;
+        int n = len-indx+1;
+        int i=1;
+        while (i!=n && curr.next!=null){
+            prev=curr;
+            curr=curr.next;
+            i++;
+        }
+        prev.next= curr.next;
+    }
+
+    private void reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next;
+
+        while (curr!=null){
+            next = curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        head = prev;
     }
 
     private void update(int idx, int value) {
