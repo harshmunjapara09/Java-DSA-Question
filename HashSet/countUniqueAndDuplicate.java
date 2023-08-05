@@ -15,7 +15,7 @@ public class countUniqueAndDuplicate {
             }
             set.add(value);
         }
-        System.out.println();
+        System.out.println("");
 
         HashSet<Integer> set2 = new HashSet<>();
 //         Duplicate Value

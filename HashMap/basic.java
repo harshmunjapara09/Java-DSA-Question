@@ -22,7 +22,7 @@ public class basic {
 //        for (Map.Entry s : map.entrySet()) {
 //            System.out.print(s.getKey() +"="+s.getValue()+" ");
 //        }
-        String [] companyName = {"Hp","Dell","Asus","Mi","Oneplus"};
+        String [] companyName = {"Hp","Dell","Asus","Mi","Oneplus+"};
         int[] price = {10000,20000,15000,16000,13000};
 
         HashMap<String,Integer> map = new HashMap<>();
