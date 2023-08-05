@@ -28,9 +28,13 @@ The `data-structures` folder contains implementations of various data structures
 
 Here are some of the data structures you can find in this repository:
 - Array
+- 2D Array
+- String
 - Linked List (Singly, Doubly, Circular)
 - Stack
 - Queue (Array-based, Linked List-based)
+- Divide Conquer
+- Recursion
 - Binary Tree
 - Binary Search Tree
 - Heap (Min Heap, Max Heap)
@@ -44,7 +48,6 @@ The `algorithms` folder contains Java implementations of various classic algorit
 Here are some of the algorithms you can find in this repository:
 - Sorting Algorithms (Bubble Sort, Merge Sort, Quick Sort, etc.)
 - Searching Algorithms (Linear Search, Binary Search, etc.)
-- Graph Algorithms (BFS, DFS, Dijkstra's Algorithm, etc.)
 - Dynamic Programming Algorithms
 - Divide and Conquer Algorithms
 
