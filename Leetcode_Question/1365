@@ -18,3 +18,31 @@ class Solution {
         return result;
     }
 }
+
+// Secound Way
+
+class Solution {
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+        int [] result = new int[nums.length];
+        TreeMap<Integer,Integer> map = new TreeMap<>();
+
+        for (Integer i : nums) {
+            map.put(i, map.getOrDefault(i,0)+1);
+        }
+        System.out.println(map);
+
+        for (int j = 0; j < result.length; j++) {
+            int sum =0;
+            for (Map.Entry  i : map.entrySet()) {
+                if ((int)i.getKey()==nums[j]){
+                    break;
+                }
+                else{
+                    sum += (int)i.getValue();
+                }
+            }
+            result[j]=sum;
+        }
+        return result;
+    }
+}

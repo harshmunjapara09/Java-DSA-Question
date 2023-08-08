@@ -12,3 +12,21 @@ class Solution {
     }
 
 }
+
+//Secound Way
+
+class Solution {
+    public int numIdenticalPairs(int[] nums) {
+         HashMap<Integer, Integer> map = new HashMap<>();
+        for (Integer i : nums) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+
+        int count = 0;
+        for(Integer i : map.values()){
+            count = count + i * (i - 1)/2;
+        }
+
+        return count;
+    }
+}
