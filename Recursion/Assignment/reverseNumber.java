@@ -12,10 +12,9 @@ public class reverseNumber {
         if (n==0){
             return;
         }
-        reverse(n);
         int rem = n % 10;
         n = n/10;
         rev = rev * 10 + rem;
-        System.out.println(rev);
+        reverse(n);
     }
 }
