@@ -62,10 +62,9 @@ public class Basics {
 //        int n=3;
 //        System.out.println(friendPairing(n));
 
-
-        int [] arr ={1,2,3,4,5,6,7,8};
-        int target = 12;
-        System.out.println(Search(arr,target,0,arr.length-1));
+//        int [] arr ={1,2,3,4,5,6,7,8};
+//        int target = 12;
+//        System.out.println(Search(arr,target,0,arr.length-1));
 
     }
 
