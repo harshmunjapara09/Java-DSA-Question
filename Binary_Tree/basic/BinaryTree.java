@@ -1,4 +1,4 @@
-package Binary_Tree;
+package Binary_Tree.basic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,6 @@ public class BinaryTree {
         printInOrder(root);
 
 //        Using Iteration
-
         System.out.println(print(root));
 
     }
