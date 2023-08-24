@@ -1,9 +1,6 @@
 package Binary_Tree.Assignment;
 
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class basic {
     public static void main(String[] args) {
@@ -24,14 +21,18 @@ public class basic {
 //        Using Stack
 //        tree.printlevel(tree.root);
 //        tree.inOrderUsingStack(tree.root);
-
-//        System.out.println(tree.countNodes(tree.root));
+//
+//        tree.countNodes(tree.root);
+//        System.out.println(BinaryTree.count);
 
 //        tree.NthNode(tree.root, 6);
 
 //        System.out.println(tree.Find(tree.root,10));
 
-        System.out.println(tree.Height(tree.root));
+//        System.out.println(tree.Height(tree.root));
+
+        tree.printSpiralOrder(tree.root);
+
 
     }
 
@@ -93,7 +94,7 @@ class BinaryTree {
         Stack<TreeNode> stack = new Stack<>();
         TreeNode curr = root;
 
-        while (curr != null || stack.size() > 0) {
+        while (curr != null || !stack.isEmpty()) {
             while (curr != null) {
                 stack.push(curr);
                 curr = curr.left;
@@ -106,21 +107,24 @@ class BinaryTree {
     }
 
 
-    public int countNodes(TreeNode root) {
+    public void countNodes(TreeNode root) {
         if (root == null) {
-            return 0;
+            return;
+        }else {
+            count++;
         }
-
-        return 1 + countNodes(root.left) + countNodes(root.right);
+        countNodes(root.left);
+        countNodes(root.right);
     }
 
     public void NthNode(TreeNode root, int i) {
         if (root == null) {
             return;
+        }else{
+            count++;
         }
-
         NthNode(root.left, i);
-        count++;
+//        count++;
         if (i == count) {
             System.out.println(root.data);
             return;
@@ -147,6 +151,48 @@ class BinaryTree {
         int rheight = Height(root.right);
 
         return 1 + Math.max(lheight,rheight);
+    }
+
+    public void printSpiralOrder(TreeNode root) {
+        Deque<TreeNode> dq = new LinkedList<>();
+        dq.add(root);
+        boolean isRev = false;
+        while (!dq.isEmpty()){
+            if (isRev){
+                int size = dq.size();
+                while (size > 0){
+                    TreeNode node = dq.removeLast();
+                    System.out.print(node.data+" ");
+
+                    if (node.right!=null){
+                        dq.addFirst(node.right);
+                    }
+                    if (node.left!=null){
+                        dq.addFirst(node.left);
+                    }
+                    size--;
+                }
+                System.out.println();
+                isRev = !isRev;
+            }else {
+                int size = dq.size();
+
+                while (size > 0){
+                    TreeNode node = dq.removeFirst();
+                    System.out.print(node.data+" ");
+
+                    if (node.left!=null){
+                        dq.addLast(node.left);
+                    }
+                    if (node.right!=null){
+                        dq.addLast(node.right);
+                    }
+                    size--;
+                }
+                System.out.println();
+                isRev = !isRev;
+            }
+        }
     }
 }
 
