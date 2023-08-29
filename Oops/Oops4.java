@@ -38,8 +38,8 @@ class Student1{
         return perc;
     }
     public static void getTop3Student(Student1 stud[]){
-        for(int i=0;i<3;i++){
-            for(int j=0;j<2;j++){
+        for(int i=0;i<stud.length;i++){
+            for(int j=0;j<stud.length-1;j++){
                 if(stud[j].perc < stud[j+1].perc){
                     Student1 temp = stud[j];
                     stud[j] = stud[j+1];

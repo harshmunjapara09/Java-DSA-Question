@@ -22,7 +22,7 @@ public class basic {
 //        tree.printlevel(tree.root);
 //        tree.inOrderUsingStack(tree.root);
 //
-//        tree.countNodes(tree.root);
+        tree.countNodes(tree.root);
 //        System.out.println(BinaryTree.count);
 
 //        tree.NthNode(tree.root, 6);
