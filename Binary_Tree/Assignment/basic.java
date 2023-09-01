@@ -29,7 +29,7 @@ public class basic {
 
 //        System.out.println(tree.Find(tree.root,10));
 
-//        System.out.println(tree.Height(tree.root));
+        System.out.println(tree.Height(tree.root));
 
         tree.printSpiralOrder(tree.root);
 
