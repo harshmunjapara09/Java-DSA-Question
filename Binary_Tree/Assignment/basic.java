@@ -21,7 +21,7 @@ public class basic {
 //        Using Stack
 //        tree.printlevel(tree.root);
 //        tree.inOrderUsingStack(tree.root);
-//
+
         tree.countNodes(tree.root);
 //        System.out.println(BinaryTree.count);
 

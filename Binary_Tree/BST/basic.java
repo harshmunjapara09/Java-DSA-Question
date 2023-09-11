@@ -75,7 +75,6 @@ class BinaryTree {
         }
         return min;
     }
-
 }
 
 class TreeNode {

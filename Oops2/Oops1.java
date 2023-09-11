@@ -1,7 +1,7 @@
 package Oops2;
 
 public class Oops1 {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Vehicle bicycle = new Bicycle();
         Vehicle bike = new Bike();
         Vehicle car = new Car();

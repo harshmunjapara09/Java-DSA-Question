@@ -1,30 +1,14 @@
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
-class Solution {
-    public int maxDepth(TreeNode root) {
-        if (root==null){
-            return 0;
-        }
-        int lheight = maxDepth(root.left);
-        int rheight = maxDepth(root.right);
-
-        return 1 + Math.max(lheight,rheight);
-    }
-}
+//import java.util.ArrayList;
+//import java.util.List;
+//
+//class Solution {
+//    public static void main(String[] args) {
+//        List<String> wordDict = List.of(new String[]{"apple","pen"});
+//        String s = "applepenapple";
+//        System.out.println(wordBreak(s,wordDict));
+//
+//    }
+//    public static boolean wordBreak(String s, List<String> wordDict) {
+//        String [] arr = s.split(wordDict.get(0));
+//    }
+//}
