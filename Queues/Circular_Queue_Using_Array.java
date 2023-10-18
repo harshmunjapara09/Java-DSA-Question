@@ -10,15 +10,10 @@ public class Circular_Queue_Using_Array {
         cq.add(4);
         cq.add(5);
         cq.remove();
-        cq.remove();
         cq.add(6);
-        cq.add(7);
 
-        while (!cq.isEmpty()){
-            System.out.println(cq.peek());
-            cq.remove();
-        }
 
+        cq.printQueue();
     }
 
     public static class CircularQueue {
@@ -32,6 +27,22 @@ public class Circular_Queue_Using_Array {
             size = n;
             front = -1;
             rear = -1;
+        }
+        public void printQueue() {
+            if (isEmpty()) {
+                System.out.println("Queue is Empty");
+                return;
+            }
+
+            int current = front;
+            while (true) {
+                System.out.print(arr[current] + " ");
+                if (current == rear) {
+                    break;
+                }
+                current = (current + 1) % size;
+            }
+            System.out.println();
         }
 
         public boolean isEmpty() {
