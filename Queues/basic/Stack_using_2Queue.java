@@ -10,10 +10,10 @@ public class Stack_using_2Queue {
         Queue<Integer> q2 = new LinkedList<>();
 
         public void push(int value){
-            if (q1.isEmpty()){
+            if (!q1.isEmpty()){
                 q1.add(value);
             }else {
-                q1.add(value);
+                q2.add(value);
             }
         }
 
