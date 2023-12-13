@@ -1,3 +1,5 @@
+package Array;
+
 public class Check_if_unique {
     public static void main(String[] args) {
         int[] arr={11,12,13,14,13,11,15};

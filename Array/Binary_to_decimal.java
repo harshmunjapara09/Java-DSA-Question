@@ -1,3 +1,4 @@
+package Array;
 
 public class Binary_to_decimal {
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class Binary_to_decimal {
         while (n!=0){
             int last  = n % 10 ;
              dec  = dec + (last * (int)Math.pow(2,power));
-             n  = n/10;
+             n = n/10;
              power++;
         }
         System.out.println(dec);

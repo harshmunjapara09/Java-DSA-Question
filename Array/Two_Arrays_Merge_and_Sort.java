@@ -1,3 +1,5 @@
+package Array;
+
 public class Two_Arrays_Merge_and_Sort {
     public static void main(String[] args) {
         int[] arr1 = {1,4,5,6,9,10};

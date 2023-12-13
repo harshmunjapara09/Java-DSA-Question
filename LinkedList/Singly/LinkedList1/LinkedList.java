@@ -25,7 +25,7 @@ public class LinkedList {
 
 //        ll.deleteNotHead(ll.head.next);
 //        System.out.println();
-//        ll.delete(50);
+        ll.delete(50);
         ll.print();
     }
 

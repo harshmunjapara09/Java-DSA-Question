@@ -1,6 +1,8 @@
+package Array;
+
 public class Bubblesort {
     public static void main(String[] args) {
-        int[] arr = {11,15,12,19,20,21,14};
+        int[] arr = {11, 15, 12, 19, 20, 21, 14};
 
         for(int i=0;i< arr.length-1;i++){
             for(int j=0;j< arr.length-i-1;j++){
@@ -11,7 +13,18 @@ public class Bubblesort {
                 }
             }
         }
-        for(int i=0;i< arr.length;i++){
+//        for (int i = 0; i < arr.length; i++) {
+//            int temp = 0;
+//            for (int j = 0; j < arr.length; j++) {
+//                if (arr[i] < arr[j]) {
+//                    temp = arr[i];
+//                    arr[i]=arr[j];
+//                    arr[j]=temp;
+//                }
+//            }
+//        }
+
+        for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
     }

@@ -1,3 +1,5 @@
+package Array;
+
 public class Binary_search {
     public static void main(String[] args) {
         int[] arr = {11,12,13,14,15};
@@ -10,9 +12,9 @@ public class Binary_search {
             if(arr[mid]==value){
                 System.out.println("Present");
                 return;
-            } else if (value>arr[mid]) {
+            } else if (value > arr[mid]) {
                 left = mid + 1;
-            } else if (value<arr[mid]) {
+            } else {
                 right = mid - 1;
             }
         }

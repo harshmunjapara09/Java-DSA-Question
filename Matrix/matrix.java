@@ -19,7 +19,7 @@ public class matrix {
 //        printHighestSumOfCol(mat,row,col);
 //        deleteMaxElementRow(mat,row,col);
 //        deleteMaxElementCol(mat,row,col);
-//        diagonalTopLeftToRightBottom(mat,row,col);
+        diagonalTopLeftToRightBottom(mat,row,col);
 //        diagonalTopRightToLeftBottom(mat,row,col);
 //        int sumOfDiagonal =  sumOfDiagonal(mat,row,col);
 //        System.out.println(sumOfDiagonal);

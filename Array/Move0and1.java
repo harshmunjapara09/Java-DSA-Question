@@ -1,3 +1,5 @@
+package Array;
+
 public class Move0and1 {
     public static void main(String[] args) {
         int [] arr = {0,1,0,1,0,1,0,1,0,1,0,0,1};
@@ -36,9 +38,9 @@ public class Move0and1 {
 //            j++;
 //        }
 //
-//        for(int k=0;k< arr.length;k++){
-//            System.out.println(arr[k]);
-//        }
+        for(int k=0;k< arr.length;k++){
+            System.out.println(arr[k]);
+        }
 
     }
 }

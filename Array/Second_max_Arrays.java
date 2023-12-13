@@ -1,3 +1,5 @@
+package Array;
+
 public class Second_max_Arrays {
     public static void main(String[] args) {
         int[] arr = {11,34,56,33,22};

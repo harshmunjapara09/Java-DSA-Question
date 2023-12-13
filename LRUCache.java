@@ -12,7 +12,6 @@ public class LRUCache {
         lru.add(5);
         lru.add(6);
         lru.print();
-
     }
 }
 
